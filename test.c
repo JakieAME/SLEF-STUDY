@@ -342,22 +342,110 @@
 //	printf("%d\n", sizeof(pc));
 //	return 0;
 //}  
-struct book
-{
-	char name[20];
-	short price;
-};
-int main()
-{
-	struct book b1 = { "C语言程序设计",55 };
-	strcpy(b1.name, "C++");//strcpy - string copy 字符串拷贝 - 库函数 - string.h
-//	struct book* pd = &b1;
-//	printf("书名:%s\n", (*pd).name);
-//	printf("书名:%d\n", (*pd).price);
-//	printf("书名:%s\n", pd->name);
-	printf("书名:%s\n", b1.name);
-//	printf("价格:%d\n", b1.price);
-//	b1.price = 15;
-//	printf("修改后的价格:%d\n", b1.price);
-	return 0;
-}
+//struct book
+//{
+//	char name[20];
+//	short price;
+//};
+//int main()
+//{
+//	struct book b1 = { "C语言程序设计",55 };
+//	strcpy(b1.name, "C++");//strcpy - string copy 字符串拷贝 - 库函数 - string.h
+////	struct book* pd = &b1;
+////	printf("书名:%s\n", (*pd).name);
+////	printf("书名:%d\n", (*pd).price);
+////	printf("书名:%s\n", pd->name);
+//	printf("书名:%s\n", b1.name);
+////	printf("价格:%d\n", b1.price);
+////	b1.price = 15;
+////	printf("修改后的价格:%d\n", b1.price);
+//	return 0;
+//}
+// int main()
+//{
+//	int age = 100;
+//	if (age < 18)
+//	{
+//		printf("未成年\n");
+//		 
+//	}
+//	else if (18 <= age && age < 28)//else 执行就近原则
+//		printf("青年\n");
+//	else if (age >= 28 && age < 50)
+//		printf("壮年\n");
+//	else if (age >= 50 && age < 90)
+//		printf("老年\n");
+//	else
+//		printf("与天同寿");
+//	return 0;
+//}
+//int main()
+//{
+//	int num = 4;
+//	if (5 == num)// = 赋值 ==判断相等
+//	{
+//		printf("呵呵\n");
+//	}
+//	return 0;
+//}
+#include <stdio.h>
+#include <string.h>
+//int main()
+//{
+//	int num1 = 0;
+//	scanf("%d", &num1);
+//	if (0 == num1 % 2)
+//	{
+//		printf("%d是整数\n", num1);
+//	}
+//	else
+//	{
+//		printf("%d不是整数\n", num1);
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int math = 1;
+//	while (1 <= math && 100 >= math)
+//	{
+//		if (1 == math % 2)
+//		{
+//			printf("%d\n", math);
+//		}
+//	math++;
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int day = 0;
+//	scanf("%d", &day);
+//	switch (day)
+//	{
+//	case 1:
+//	case 2:
+//	case 3:
+//	case 4:
+//	case 5:
+//		printf("工作日\n");
+//		break;
+//	case 6:
+//	case 7:
+//	    printf("休息日\n");
+//		break;
+//	default:
+//		printf("输入错误\n");
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int ch = getchar();//getchar 获取字符并以int形式进行保存
+//	//while((ch = getchar()) != EOF)//end of file EOF
+//	//{
+//	putchar(ch);//打印字符
+//	//}
+//	printf("%c\n", ch);
+//	return 0;
+//}

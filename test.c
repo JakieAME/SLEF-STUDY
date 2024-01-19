@@ -388,8 +388,8 @@
 //	}
 //	return 0;
 //}
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
 //int main()
 //{
 //	int num1 = 0;
@@ -442,10 +442,202 @@
 //int main()
 //{
 //	int ch = getchar();//getchar 获取字符并以int形式进行保存
-//	//while((ch = getchar()) != EOF)//end of file EOF
+//	//while((ch = getchar()) != EOF)//end of file EOF 文件结束标志
 //	//{
 //	putchar(ch);//打印字符
 //	//}
 //	printf("%c\n", ch);
 //	return 0;
 //}
+//int main()
+//{
+//	/*int ch = 0;
+//	while ((ch = getchar()) != EOF)
+//	{
+//		putchar(ch);
+//	}
+//	return 0;*/
+//	int ret = 0;
+//	char password[20] = { 0 };
+//	printf("请输入密码;>");
+//	scanf("%s", password);
+//	printf("%s", password);
+//	while ((getchar()) != '\n');
+//	printf("请确认（Y/N）;>");
+//	ret = getchar();
+//	if (ret == 'Y')
+//	{
+//		printf("确认成功\n");
+//	}
+//	else
+//	{
+//		printf("确认失败\n");
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int ch = 0;
+//	while ((ch = getchar()) != EOF)
+//	{
+//		if (ch < '0' || ch > '9')
+//			continue;
+//		putchar(ch);
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	for (int i = 1; i <= 10; i++)
+//	{
+//		if (i == 5)
+//			printf("haha\n");
+//		printf("hehe\n", i);
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	for (;;)
+//	{
+//		printf("hehe\n");
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int i = 0;
+//	int j = 0;
+//	for (; i < 10; i++)
+//	{
+//		for (; j < 10; j++)
+//		{
+//			printf("hehe\n");
+//		}
+//	}
+//	return 0; 
+//}
+//int main()
+//{
+//	int i = 1;
+//	do
+//	{
+//		if (i == 5)
+//			continue;
+//		printf("%d ", i);
+//		i++;
+//	}
+//	while (i <= 10);
+//	return 0;
+//}
+//int main()
+//{
+//	int sum = 1;
+//	int n;
+//	int ret = 0;
+//	scanf("%d", &n);
+//	int i = n;
+//	for(;i>0;i--)
+//	{
+//		for (n=i; n > 0; n--)
+//		{
+//			sum = n * sum;
+//		}
+//		ret = ret + sum;
+//		sum = 1;
+//	}
+//	printf("n的阶乘是%d", ret);
+//	return 0;
+//}
+#include <stdio.h>
+#include <string.h>
+#include <windows.h>
+#include <stdlib.h>
+//int main()
+//{
+//	int arr[] = {1,2,3,4,5,6,7,8,9,10};
+//	int k = 7;
+//	int i = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	for (i = 0; i < sz; i++)
+//	{
+//		if (k == arr[i])
+//		{
+//			printf("找到了，下标是： %d\n", i);
+//			break;
+//		}
+//	}
+//	if (i == sz)
+//		printf("找不到\n");
+//	return 0;
+//}
+//int main()
+//{
+//	int arr[] = {1,2,3,4,5,6,7,8,9,10};
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int k = 7;
+//	int left = 0;
+//	int right = sz-1;
+//	while(left<=right)
+//	{
+//		int mid = (left + right) / 2;
+//		if (arr[mid] > k)
+//		{
+//			right = mid - 1;
+//		}
+//		else if (arr[mid] < k)
+//		{
+//			left = mid + 1;
+//		}
+//		else
+//		{
+//			printf("找到了\n");
+//			break;
+//		}
+//	}
+//	if (left > right)
+//	{
+//		printf("找不到\n");
+//	}
+//	return 0; 
+//}
+//int main()
+//{
+//	char arr1[] = "welcome to bit!!!!!!";
+//	char arr2[] = "####################";
+//	int left = 0;
+//	int right = strlen(arr1)-1;
+//	while (left <= right)
+//	{
+//		system("cls");//执行系统命令的函数-cls - 清空屏幕
+//		arr2[left] = arr1[left];
+//		arr2[right] = arr1[right];
+//		printf("%s\n", arr2);
+//		Sleep(1000);
+//		left++;
+//		right--;
+//	}
+//	return 0;
+//}
+int main()
+{
+	int i = 0;
+	char password[20] = { 0 };
+	for (i = 0; i < 3; i++)
+	{
+		printf("请输入密码:>");
+		scanf("%s", password);
+		if (strcmp(password, "123456") == 0)//==不能用来比较字符串是否相等，应该使用一个库函数-strcmp
+		{
+			printf("登陆成功\n");
+				break;
+		}
+		else
+		{
+			printf("密码错误\n");
+		}
+	}
+	if (i == 3)
+		printf("密码错误,请稍后再试\n");
+	return 0;
+}
